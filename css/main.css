@@ -1,0 +1,91 @@
+body {
+    padding: 20px;
+    text-align: center;
+    background: #003535;
+}
+
+.primary {
+    padding: 25px 60px;
+    background: darkcyan;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.primary:hover {
+    border: 1px solid darkcyan;
+    background: white;
+    color: darkcyan;
+}
+
+.cards-wrapper {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 20px;
+    width: 200px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0 0 20px darkcyan;
+    perspective: 1000px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.card-back {
+    background-color: darkcyan;
+    color: white;
+    transform: rotateY(180deg);
+    text-align: right;
+}
+
+.card-back p {
+    text-align: left;
+    margin: 10px;
+}
+.card-back h2 {
+    text-align: center;
+    margin: 10px;
+}
+
+.close {
+    background: transparent;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}

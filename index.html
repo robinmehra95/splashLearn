@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Splash Learn Assignment</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <button class="primary">SHUFFLE CARDS</button>
+
+  <div class="cards-wrapper">
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="img/card1.jpeg" width="100%" height="100%" alt="card-image" />
+        </div>
+        <div class="card-back">
+          <button class="close" onclick="removeElement(this)">&#x2715;</button>
+          <h2>Dummy Text</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="img/card2.jpeg" width="100%" height="100%" alt="card-image" />
+        </div>
+        <div class="card-back">
+          <button class="close" onclick="removeElement(this)">&#x2715;</button>
+          <h2>Dummy Text</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="img/card3.jpeg" width="100%" height="100%" alt="card-image" />
+        </div>
+        <div class="card-back">
+          <button class="close" onclick="removeElement(this)">&#x2715;</button>
+          <h2>Dummy Text</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="img/card4.jpeg" width="100%" height="100%" alt="card-image" />
+        </div>
+        <div class="card-back">
+          <button class="close" onclick="removeElement(this)">&#x2715;</button>
+          <h2>Dummy Text</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="img/card5.jpeg" width="100%" height="100%" alt="card-image" />
+        </div>
+        <div class="card-back">
+          <button class="close" onclick="removeElement(this)">&#x2715;</button>
+          <h2>Dummy Text</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="img/card6.jpeg" width="100%" height="100%" alt="card-image" />
+        </div>
+        <div class="card-back">
+          <button class="close" onclick="removeElement(this)">&#x2715;</button>
+          <h2>Dummy Text</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="img/card7.jpeg" width="100%" height="100%" alt="card-image" />
+        </div>
+        <div class="card-back">
+          <button class="close" onclick="removeElement(this)">&#x2715;</button>
+          <h2>Dummy Text</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="img/card8.jpeg" width="100%" height="100%" alt="card-image" />
+        </div>
+        <div class="card-back">
+          <button class="close" onclick="removeElement(this)">&#x2715;</button>
+          <h2>Dummy Text</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="img/card9.png" width="100%" height="100%" alt="card-image" />
+        </div>
+        <div class="card-back">
+          <button class="close" onclick="removeElement(this)">&#x2715;</button>
+          <h2>Dummy Text</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function removeElement(that){
+      var card = that.parentNode.parentNode.parentNode;
+      card.parentNode.removeChild(card)
+    }
+  </script>
+
+</body>
+
+</html>
