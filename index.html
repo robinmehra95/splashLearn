@@ -18,9 +18,9 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <button class="primary">SHUFFLE CARDS</button>
+  <button class="primary" onclick="shuffle()">SHUFFLE CARDS</button>
 
-  <div class="cards-wrapper">
+  <div class="cards-wrapper" id="cardsList">
     <div class="card">
       <div class="card-inner">
         <div class="card-front">
@@ -136,6 +136,12 @@
     function removeElement(that){
       var card = that.parentNode.parentNode.parentNode;
       card.parentNode.removeChild(card)
+    }
+    function shuffle() {
+      var cardsList = document.getElementById("cardsList");
+      for (var i = cardsList.children.length; i >= 0; i--) {
+        cardsList.appendChild(cardsList.children[Math.random() * i | 0]);
+      }
     }
   </script>
 
